@@ -36,13 +36,13 @@ spreadsheet = "<spreadsheet_id>"
 service = gsheets.create_service()
 
 # Read values from the spreadsheet
-rows = gsheets.read_spreadsheet(service, spreadsheet, "contacts!A:D")
+rows = gsheets.read_spreadsheet(service, spreadsheet, "<tab_name>!A:D")
 for row in rows:
     print(*row)
 
 # Update spreadsheet
 values = {"values": [["This cell is updated.", "This one too."]]}
-gsheets.update_spreadsheet(service, spreadsheet, "contacts!A8", values)
+gsheets.update_spreadsheet(service, spreadsheet, "<tab_name>!A8", values)
 
 # Append to spreadsheet
 values = {"values": [["This goes at the end.", "This one too."]]}
