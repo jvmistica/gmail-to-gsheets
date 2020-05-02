@@ -7,6 +7,7 @@ from googleapiclient.discovery import build
 
 def create_service():
     """
+    Creates a Google Sheets service based on the credentials.json found in the current directory.
     """
 
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
@@ -32,6 +33,7 @@ def create_service():
 
 def read_spreadsheet(service, sheet_id, cell_range):
     """
+    Reads the contents of the given spreadsheet.
     """
 
     sheet = service.spreadsheets()
@@ -43,6 +45,7 @@ def read_spreadsheet(service, sheet_id, cell_range):
 
 def update_spreadsheet(service, sheet_id, cell_range, values):
     """
+    Updates the value of the cells.
     """
 
     body = values
@@ -57,6 +60,7 @@ def update_spreadsheet(service, sheet_id, cell_range, values):
 
 def append_spreadsheet(service, sheet_id, cell_range, values):
     """
+    Appends the values at the end of the spreadsheet.
     """
 
     result = service.spreadsheets().values().append(
