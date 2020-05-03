@@ -1,1 +1,1 @@
-# gmail-to-gsheets
+# Gmail to Google Sheets
