@@ -3,9 +3,9 @@ Extracts CSV attachments from Gmail emails and appends them to a Google Sheets s
 
 ## Getting Started
 
-Login to your Google account.
-Download the credentials.json file from: https://developers.google.com/gmail/api/quickstart/python.
-Save the file to the gmail and gsheets folder.
+Login to your Google account.\
+Download the credentials.json file from: https://developers.google.com/gmail/api/quickstart/python.\
+Save the file to the gmail and gsheets folder.\
 
 Install the required modules:
 ```
